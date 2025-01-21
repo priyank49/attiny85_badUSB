@@ -2,8 +2,6 @@
 
 void setup() {
   DigiKeyboard.delay(1000);
-  
-  // Open the Run dialog (Win + R)
   DigiKeyboard.sendKeyPress(KEY_R, MOD_GUI_LEFT); 
   DigiKeyboard.sendKeyPress('r'); 
   DigiKeyboard.delay(500);
