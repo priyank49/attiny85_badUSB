@@ -1,0 +1,11 @@
+#include <DigiKeyboard.h>
+
+void setup() {
+  DigiKeyboard.delay(500);
+  DigiKeyboard.sendKeyPress(KEY_R, MOD_GUI_LEFT);  
+  DigiKeyboard.delay(500);
+  DigiKeyboard.print("calc");
+  DigiKeyboard.sendKeyPress(KEY_ENTER);
+}
+
+void loop() {
